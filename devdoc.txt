@@ -1,0 +1,66 @@
+Fileman has a lot of jargon, and heavy abbreviation. Here's what they
+mean:
+
+d [think 'directory']
+- The current directory, relative to the current user's root
+
+id
+- ID of a file, in the form of a string, in Filelist. Format of
+  either 'f#' or 'c#'
+
+i
+- Number of a file in Filelist. 0 or positive corresponds with ID
+  'f<i>', negative corresponds with ID 'c<-1-i>'
+
+s
+- Session ID. Only appears in GET strings because of PHP's worst
+  "feature" ever - register_globals.
+
+fli reference:
+
+    // The name of the file - 'example.gif'
+n     'name' => $file,
+
+    // The ID of the file - 'file_example.gif'
+id    'id' => ((filetype($path.$file) == 'dir')?'fold_'.substr($file,0,-1):'file_'.$file),
+
+    // Is it a directory? - FALSE
+d     'isdir' => (filetype($path.$file) == 'dir'),
+
+    // File size - 1024
+s     'size' => $size,
+
+    // Text file size - '1 KB'
+ts    'tsize' => textfilesize($size),
+
+    // Modified (Unix timestamp) - 0
+m     'modified' => $modified,
+
+    // Modified - 'Jan 1, 1970 12:00:00 AM'
+tm    'tmodified' => date("F j, Y g:i:s A",$modified),
+
+    // Perms - 0777
+p     'perms' => substr(sprintf('%o', fileperms($path.$file)), -4),
+
+    // Extension - 'gif'
+e     'ext' => $ext,
+
+    // File icon - 'gif'
+i     'img' => textfileimg($ext),
+
+    // File type - 'GIF Image'
+t     'type' => textfiletype($ext),
+
+    // File type ID - '0'
+ft     'ft' => ft($ext),
+
+    // Extension acronym - 'Graphics Interchange Format'
+ea    'extac' => textfileextac($ext),
+
+    // Is it a viewable image (an image that can be displayed in a browser)? - TRUE
+vi    'isvimg' => isvimg($ext),
+
+    // Image size data - {$width, $height, 1, 'height="$height" width="$width"'}
+    // ['imgsize'][2]:  1 = GIF, 2 = JPG, 3 = PNG, 4 = SWF, 5 = PSD, 6 = BMP, 7 = TIFF(intel byte order), 8 = TIFF(motorola byte 
+order), 9 = JPC, 10 = JP2, 11 = JPX, 12 = JB2, 13 = SWC, 14 = IFF, 15 = WBMP, 16 = XBM
+is    'imgsize' => ((isvimg($ext)||$ext=='psd'||$ext=='bmp') && $size<=5242880)?$imgsize = @getimagesize($path.$file):FALSE);

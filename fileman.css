@@ -1,0 +1,561 @@
+/*
+ *
+ * Filecharger
+ * by Zarel of Novawave
+ * CSS File
+ * 
+ * CORE FILE - DO NOT DELETE
+ *
+ */
+
+
+/*************************
+ * Layout
+ *************************/
+
+html, body, div, form, h1, h2, h3
+{margin:0;padding:0;}
+html
+{height:100%;}
+body
+{
+	height:100%;
+	font-family: Tahoma, Geneva, Verdana, Arial, "Trebuchet MS", Sans-Serif;
+	font-size: 11px;
+	background-color: #FFFFFF;
+}
+#contentwrapper
+{margin:0;padding:0;height:100%;}
+.cpositioner
+{padding-left:217px;padding-top:40px;}
+
+#content
+{
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	overflow: auto;
+	height: 300px;
+}
+
+#shelfbar
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 260px;
+	background-color: #FFFFFF;
+	overflow: auto;
+	height: 84px;
+	border-bottom: 5px solid #5A92DE;
+}
+#flist
+{
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	overflow: auto;
+	height: 191px;
+}
+
+#slist
+{
+	position: absolute;
+	top: 40px;
+	left: 217px;
+	width: 260px;
+	height: 84px;
+}
+#clist
+{
+	border-left: 5px solid #5A92DE;
+	height: 84px;
+	width: auto;
+	overflow: auto;
+}
+
+#sidebar
+{
+	background-color: #5D91DA;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 214px;
+	overflow: auto;
+	height: 300px;
+}
+#sidebar_r
+{
+	background-color: #5D91DA;
+	cursor: ew-resize;
+	_cursor: resize;
+	position: absolute;
+	top: 40px;
+	left: 214px;
+	width: 3px;
+	overflow: auto;
+	height: 300px;
+}
+#sidebar_r:hover
+{
+	background-color: #2A4DAB;
+}
+
+#sidebar .sbarpad
+{
+	padding: 12px;
+	padding-right: 9px;
+}
+
+#topbar
+{
+	background-color: #5D91DA;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	width: 100%;
+	overflow: visible;
+}
+
+#topbar .sbarpad
+{
+	padding: 8px 12px 8px 12px;
+}
+
+.dir
+{
+	color: #000000;
+	background: #FFFFFF none no-repeat scroll 1px 1px;
+	border: 1px solid #2A4DAB;
+	font-family: "Courier New", monospace;
+	margin: 0px;
+	padding: 2px 2px 2px 20px;
+	height: 14px;
+}
+.dir a
+{
+	color: #000000;
+	text-decoration: none;
+}
+.dir a:hover
+{
+	color: #072A66;
+	text-decoration: underline;
+}
+
+#ext
+{
+	display: none;
+	position: absolute;
+	/*  top: 40px;
+	left: 217px;*/
+	top: 0;
+	left: 0;
+	width:100%;height:100%;
+	background-image: url(images/fade.png);
+}
+
+#exttable
+{
+	width:100%;height:100%;
+}
+
+#extdiv
+{
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*************************
+ * Main
+ *************************/
+
+.cmsg
+{
+	padding: 40px;
+}
+.cmsg .loading
+{
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+}
+.fmsg
+{
+	padding: 30px;
+	font-size: 12px;
+	font-style: italic;
+	color: #888888;
+}
+
+
+/*************************
+ * File list
+ *************************/
+
+ul.fl,
+div.fl
+{
+	display: block;
+	/*width: 100%;*/
+	padding: 9px;
+	margin: 0px;
+	text-align: left;
+}
+.flw
+{
+	padding: 3px;
+	border: 0;
+}
+.flw_a
+{
+	padding: 0;
+	border: 3px solid #CC9966;
+}
+.fl li
+{
+	display: block;
+	float: left;
+	width: 68px;
+	height: 50px;
+	margin: 0;
+	padding: 5px;
+}
+.fl a,
+.fla
+{
+	color: #000000;
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	border: 1px solid #E2EAF2;
+	width: 66px;
+	height: 48px;
+	cursor: default;
+}
+.fl a.h
+{
+	border-color: #6699CC;
+	background-color: #B8CFEF;
+}
+.fl img
+{
+	display: block;
+}
+.fl a.sel
+{
+	background-color: #FFEEC2;
+	border-color: #CC9966;
+}
+.fl a.hsel
+{
+	background-color: #FFD389;
+	border-color: #BA8744;
+}
+.fl .sdi
+{
+	display: block;
+	text-align: center;
+	width: 32px;
+	margin: 0;
+	margin-left: 17px;
+	margin-right: 17px;
+	padding: 0;
+	height: 32px;
+}
+.fl .sd
+{
+	display: block;
+	text-align: center;
+	width: 66px;
+	height: 16px;
+	margin: 0; padding: 0;
+	overflow: hidden;
+}
+.fl a.d .sd
+{
+	color: #888888;
+}
+.fl .lbtn
+{
+	display: block;
+	float: left;
+	width: 16px; height: 16px;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+.fl .rbtn
+{
+	display: block;
+	float: right;
+	width: 16px; height: 16px;
+	border-left: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+/*************************
+ * Sidebar
+ *************************/
+
+.box
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #2A4DAB;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+.boxh
+{
+	color: #D9E1F6;
+	background-color: #3980D2;
+	background-image: url(images/bhbg.gif);
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 4px 10px 4px 10px;
+	display: block;
+	text-decoration: none;
+}
+.boxd
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	margin: 0px;
+	padding: 10px;
+}
+.boxd a
+{
+	color: #002280;
+	text-decoration: none;
+}
+.boxd a:hover
+{
+	text-decoration: underline;
+}
+.boxd p,
+.boxd div.p
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+}
+.btns
+{
+	text-align: center;
+	clear: both;
+}
+.togbtn
+{
+  float: right;
+  text-decoration: none;
+  display: block;
+}
+.boxh:hover
+{
+  color: #FFFFFF;
+}
+.togbtn img
+{
+  border: 0;
+}
+.overflowable
+{
+  overflow: hidden;
+}
+.file
+{
+  width: 100%;
+  display: block;
+}
+.fdiv
+{
+  overflow: hidden;
+}
+/*.fdiv:hover
+{
+  margin-left: -22px;
+  margin-right: -22px;
+}*/
+.linkbar div a
+{
+  display: block;
+}
+
+
+/*************************
+ * Context Menu
+ *************************/
+
+#cmenu
+{
+  position: absolute;
+  border: 1px solid #868588;
+  background-color: #FCFCFC;
+  margin: 0;
+  padding: 2px;
+  width: 150px;
+}
+#cmenu div
+{
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC;
+}
+#cmenu a
+{
+  display: block;
+  padding: 1px;
+  padding-left: 6px;
+  border: 1px solid #FCFCFC;
+  background-color: #FCFCFC;
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
+#cmenu a:hover
+{
+  display: block;
+  border: 1px solid #335EA8;
+  background-color: #C2CFE5;
+}
+#cmenu a.disabled
+{
+  color: #A8A8A8;
+}
+#cmenu a.disabled:hover
+{
+  border: 1px solid #A2AFC5;
+  background-color: transparent;
+}
+#cmenu div.hr
+{
+  height: 1px;
+  margin: 2px 0 2px 0;
+  background-color: #868588;
+}
+#cmenu hr
+{
+  display: none;
+}
+
+/*************************
+ * Text Editor
+ *************************/
+
+.cw_te
+{
+  background-color: #FFFFFF;
+}
+
+.textedit
+{
+  padding: 0;
+}
+
+#tetopbar
+{
+  padding:5px;
+  background: #dce7f5 url(images/actbar.gif) repeat-x;
+  height:18px;
+}
+#btnbar
+{
+  float: left;
+  padding: 2px 0;
+}
+#flocbar
+{
+  margin-left: 8em;
+  margin-right: 25px;
+  height: 25px;
+}
+#valbar
+{
+  clear: both;
+}
+#btnbar .bbbtn
+{
+  background-color: transparent;
+	border:0px solid #fff;
+  color: #2A4DAB;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  padding: 1px 4px 1px 4px;
+  cursor: pointer;
+}
+#btnbar .bbbtnd
+{
+  background-color: transparent;
+	border:0px solid #fff;
+  color: #444444;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  padding: 1px 4px 1px 4px;
+  cursor: pointer;
+}
+#btnbar .bbbtn:hover
+{
+  background-image: url(images/bhdbg.gif);
+}
+#btnbar .bbbtnp
+{
+  background-color: #FCFCFC;
+  border: 1px solid #868588;
+  color: #444444;
+  font-size: 10pt;
+  font-weight: bold;
+  padding: 1px 4px 1px 4px;
+  cursor: pointer;
+  margin: 0;
+  padding-bottom: 1px;
+  border-bottom: 0;
+  margin: 0;
+}
+#val
+{
+  display: block;
+  border: 0;
+  padding: 1px;
+  margin: 0;
+  font-family: Consolas, 'Andale Mono', 'Lucida Console', monospace;
+  font-size: 10pt;
+}
+
+/*************************
+ * Preview
+ *************************/
+
+/*.image
+{
+  border: 1px solid #000000;
+  background: #FFFFFF url(images/transp.gif);
+}*/
+
+/*************************
+ * Defaults
+ *************************/
+
+strong
+{
+  font-weight: bold;
+}
+em
+{
+  font-style: italic;
+}
+.mof
+{
+  overflow: hidden;
+}
+.file
+{
+  padding: 1px;
+}

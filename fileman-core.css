@@ -1,0 +1,345 @@
+/*
+ *
+ * Filecharger
+ * by Zarel of Novawave
+ * Core CSS File
+ * 
+ * CORE FILE - DO NOT DELETE
+ *
+ */
+
+
+/*************************
+ * Layout
+ *************************/
+
+html, body, div, form
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	font-family: Tahoma, Geneva, Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+
+/*************************
+ * Defaults
+ *************************/
+
+img, a img
+{
+	border: 0;
+}
+
+a
+{
+	color: #002280;
+}
+
+.textbox
+{
+	font-family: Tahoma, Geneva, Verdana, Arial, sans-serif;
+	padding: 2px;
+	border: 1px solid #ABADB3;
+}
+.textbox:hover
+{
+	padding: 2px;
+	border: 1px solid #2A4DAB;
+}
+.textbox:focus, .textbox:active
+{
+	padding: 1px;
+	border: 2px solid #2A4DAB;
+}
+
+.overflowable
+{
+	overflow: hidden;
+}
+.small
+{
+	font-size: 8pt;
+}
+.monospace
+{
+	font-family: "Courier New", monospace;
+}
+.key
+{
+	padding: 0 2px;
+	margin: 0 1px;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #909090;
+	border-left: 3px solid #E0E0E0;
+	border-right: 3px solid #B6B6B6;
+	background: #D4D4D4 none;
+}
+.lkey
+{
+	padding: 0 2px;
+	margin: 0 1px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #A0A0A0;
+	border-left: 3px solid #E4E4E4;
+	border-right: 3px solid #C4C4C4;
+	background: #DDDDDD none;
+}
+.click
+{
+	color: #717171;
+	padding: 0 2px;
+	margin: 0 1px;
+	border: 1px solid #999999;
+}
+.dblclick
+{
+	border: 1px solid #999999;
+	padding: 0 1px;
+}
+.table td
+{
+	padding: 3px 8px 3px 5px;
+}
+
+.usingmac .nonmaconly,
+.notusingmac .maconly,
+.maconlyor
+{
+	display: none;
+}
+
+/*************************
+ * Structure
+ *************************/
+
+a.ablink
+{
+	color: #1e395b;
+	display: block;
+	height: 12px;
+	padding: 8px 5px;
+	font-size: 12px;
+	background: #dce7f5 url(images/actbar.gif) repeat-x;
+	text-decoration: none;
+	font-weight: bold;
+	vertical-align: top;
+}
+a.ablink:hover
+{
+	border-color: #6699CC;
+	background-color: #AEC8EC;
+}
+.box
+{
+	color: #0000;
+	background-color: #FFF;
+	border: 1px solid #a0afc3;
+	margin: 0px;
+	padding: 0px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.boxh
+{
+	color: #1e395b;
+	background: #3980D2 url(images/bhbg.gif);
+	font-size: 8pt;
+	font-weight: bold;
+	margin: 0px;
+	padding: 4px 10px 4px 10px;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.boxhd
+{
+	background-image: url(images/bhdbg.gif);
+}
+.boxd
+{
+	color: #0000;
+	background-color: #FFF;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.boxd a
+{
+	color: #002280;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.boxd img
+{
+	border: 0;
+}
+.boxd a:hover
+{
+	text-decoration: underline;
+}
+.togbtn
+{
+	float: right;
+	text-decoration: none;
+	display: block;
+}
+.boxh:hover
+{
+	color: #000;
+}
+.togbtn img
+{
+	border: 0;
+}
+
+/*************************
+ * Syntax highlighting
+ *************************/
+
+.ruby .subst, .xml .title, .lisp .title { color: black; }
+
+.string, .title, .parent, .tag .attribute .value, .rules .value,
+.rules .value .number, .preprocessor, .ruby .symbol, .instancevar,
+.aggregate, .template_tag, .django .variable, .smalltalk .class,
+.addition, .flow, .stream, .bash .variable, .apache .tag,
+.apache .cbracket { color: #800; }
+
+.comment, .annotation, .template_comment, .diff .header, .chunk {
+color: #888; }
+
+.number, .date, .regexp, .literal, .smalltalk .symbol, .smalltalk .char,
+.change { color: #080; }
+
+.label, .javadoc, .ruby .string, .decorator, .filter .argument,
+.localvars, .array, .attr_selector, .pi, .doctype, .deletion, .envvar,
+.shebang, .apache .sqbracket { color: #88F; }
+
+.keyword,
+.id,
+.phpdoc,
+.title,
+.vbscript .built_in,
+.rsl .built_in,
+.cpp .built_in,
+.avrasm .built_in,
+.aggregate,
+.smalltalk .class,
+.winutils,
+.bash .variable,
+.apache .tag {
+  font-weight: bold;
+}
+
+.html .css,
+.html .javascript,
+.html .vbscript {
+  opacity: 0.5;
+}
+/*************************
+ * Context menu
+ *************************/
+
+#cmenu
+{
+	position: absolute;
+	display: none;
+	border: 1px solid #868588;
+	background-color: #FCFCFC;
+	margin: 0;
+	padding: 2px;
+	width: 150px;
+}
+#cmenu div
+{
+	margin: 0;
+	padding: 0;
+	background-color: #FCFCFC;
+}
+#cmenu a
+{
+	display: block;
+	padding: 1px;
+	padding-left: 6px;
+	border: 1px solid #FCFCFC;
+	background-color: #FCFCFC;
+	color: #0000;
+	text-decoration: none;
+	cursor: default;
+}
+.lb a
+{
+	display: block;
+	padding: 1px;
+	padding-left: 6px;
+	border: 1px solid #FFF;
+	background-color: #FFF;
+	color: #002280;
+	text-decoration: none;
+}
+#cmenu a:hover,
+.lb a:hover
+{
+	/*border: 1px solid #335EA8;*/
+	/*background-color: #C2CFE5;*/
+	border: 1px solid #6792c2;
+	background-color: #e6ecf8;
+	text-decoration: none;
+}
+.lb a.cur,
+.lb a.cur:hover
+{
+	border: 1px solid #F0C424;
+	background-color: #FFF5D0;
+}
+#cmenu a img,
+.lb a img
+{
+	vertical-align: middle;
+	margin-left: -5px;
+	margin-right: 1px;
+}
+div.hr,
+#cmenu div.hr
+{
+	height: 1px;
+	margin: 1px 0 2px 0;
+	border-bottom: 1px solid #868588;
+}
+div.hr hr
+{
+	display: none;
+}
+
+
+/*************************
+ * Modal dialogs
+ *************************/
+
+#dialog
+{
+	display: none;
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; height: 100%;
+	bottom: 0px; right: 0px;
+}
+.fade
+{
+	background: transparent url(images/fade.png);
+}
