@@ -1,11 +1,8 @@
-Filecharger from Novawave
-
-
 -----------------------------------------------------------------------
-Novawave Filecharger 1.0
+Filecharger 1.0
 http://filecharger.com
 For any webserver running PHP 4 and above
-By Guangcong Luo - http://novawave.ca/gluo
+By Guangcong Luo - http://zarel.github.com
 =======================================================================
 
 
@@ -88,7 +85,7 @@ E-mail gluo@novawave.ca
 
 My portfolio is...
 
- http://novawave.ca/gluo
+ http://zarel.github.com
 
 My E-mail address is...
 
@@ -97,7 +94,7 @@ My E-mail address is...
 =======================================================================
 Special Thanks to:
 
-- Nathan LaPierre, for giving web hosting throughout these years.
+- Nathan Lapierre, for giving web hosting throughout these years.
   > novawave.ca
 - Paul Klevorn, for helping test compatibility with iCab/Mac and
   Safari/Mac.
@@ -144,11 +141,18 @@ me if this PHP script does not work correctly.
 | License
 =======================================================================
 
-This software is licensed under
-Creative Commons Attribution-NonCommercial-ShareAlike
-http://creativecommons.org/licenses/by-nc-sa/3.0/
-Unless another license has been obtained in writing from Novawave Inc.
+Filecharger is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
+Filecharger is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Filecharger.  If not, see <http://www.gnu.org/licenses/>.
 
 -----------------------------------------------------------------------
 | Known Bugs
@@ -161,7 +165,7 @@ All know bugs have been fixed.
 | History
 =======================================================================
 
-Novawave Filecharger 1.0
+Filecharger 1.0
 - Changed Name
 
 AEsoft File Manager 1.0 RC1
