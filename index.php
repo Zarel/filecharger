@@ -653,7 +653,7 @@ if ($pane == 'l')
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Novawave Filecharger</title>
+    <title>Filecharger</title>
     <link rel="stylesheet" type="text/css" href="fileman-core.css" />
     <style type="text/css">
     <!--
@@ -776,8 +776,8 @@ if ($pane == 'l')
           </div>
         </div>
       </div>
-	  <!-- Do not remove, change, or obscure this notice //-->
-	  <br/><a href="http://filecharger.com">Filecharger</a> from <a href="http://novawave.ca">Novawave Inc.</a></td></tr>
+	  <!-- Please keep this notice, it is appreciated //-->
+	  <br/>Powered by <a href="http://filecharger.com">Filecharger</a></td></tr>
     </table>
   </body>
 </html>
