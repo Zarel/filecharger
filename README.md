@@ -1,17 +1,16 @@
------------------------------------------------------------------------
 Filecharger 1.0
-http://filecharger.com
-For any webserver running PHP 4 and above
-By Guangcong Luo - http://zarel.github.com
 =======================================================================
 
+http://filecharger.com  
+For any webserver running PHP 4 and above  
+By Guangcong Luo - http://guangcongluo.com
 
------------------------------------------------------------------------
-| Installation / Using the script
+
+Installation / Using the script
 =======================================================================
 
- Installation:
-\----------------------------------
+Installation
+----------------------------------
 
 1. If you can unzip files online (i.e. with CPanel):
 
@@ -29,15 +28,14 @@ By Guangcong Luo - http://zarel.github.com
 3. Follow the on-screen instructions.
 
 
- Usage:
-\----------------------------------
+Usage
+----------------------------------
 
  Go to the directory of your webserver you installed it. For instance,
  if you uploaded it to http://example.com/fileman/ , go there.
 
 
------------------------------------------------------------------------
-| Overview
+Overview
 =======================================================================
 
 Fileman is a PHP script that lets you manage your files (upload,
@@ -46,53 +44,52 @@ selection, and drag-and-drop file uploading.
 
 All OSes:
 
-Click on icon                 Select one file/folder
-Ctrl+click on icon            Select multiple files/folders
-Double-click on icon          Open file/folder
-click on blank space          Deselect all
-Double-click on blank space   Select all
-Arrow keys                    Select in direction of arrow key
+`Click on icon`                 Select one file/folder  
+`Ctrl+click on icon`            Select multiple files/folders  
+`Double-click on icon`          Open file/folder  
+`click on blank space`          Deselect all  
+`Double-click on blank space`   Select all  
+`Arrow keys`                    Select in direction of arrow key
 
 OS X:
 
-Cmd+A                         Select All
-Cmd+X                         Cut (move)
-Cmd+C                         Copy
-Cmd+V                         Paste
-Cmd+Down                      View/Open
-Enter                         Rename
-Del (Fn+Delete)               Delete
-Cmd+Delete                    Delete without asking
+`Cmd+A`                         Select All  
+`Cmd+X`                         Cut (move)  
+`Cmd+C`                         Copy  
+`Cmd+V`                         Paste  
+`Cmd+Down`                      View/Open  
+`Enter`                         Rename  
+`Del (Fn+Delete)`               Delete  
+`Cmd+Delete`                    Delete without asking
 
 Windows, Linux, and other OSes:
 
-Ctrl+A                        Select All
-Ctrl+X                        Cut (move)
-Ctrl+C                        Copy
-Ctrl+V                        Paste
-Enter                         View/Open
-F2                            Rename
-Del                           Delete
-Ctrl+Del                      Delete without asking
+`Ctrl+A`                        Select All  
+`Ctrl+X`                        Cut (move)  
+`Ctrl+C`                        Copy  
+`Ctrl+V`                        Paste  
+`Enter`                         View/Open  
+`F2`                            Rename  
+`Del`                           Delete  
+`Ctrl+Del`                      Delete without asking
 
 
------------------------------------------------------------------------
-| None of The Above
+None of The Above
 =======================================================================
 
 Questions? Comments? Suggestions?
-E-mail gluo@novawave.ca
+E-mail guangcongluo@gmail.com
 
 My portfolio is...
 
- http://zarel.github.com
+ http://guangcongluo.com
 
 My E-mail address is...
 
- gluo@novawave.ca
+ guangcongluo@gmail.com
 
-=======================================================================
 Special Thanks to:
+----------------------------------
 
 - Nathan Lapierre, for giving web hosting throughout these years.
   > novawave.ca
@@ -105,7 +102,7 @@ Special Thanks to:
   > quirksmode.org
 - The PHP Group, for making PHP.
 
-AEsoft File Manager comes with addons that make use of these libraries:
+Filecharger comes with addons that make use of these libraries:
 
 - JW FLV Media Player for FLV playback
   > http://www.longtailvideo.com/players/jw-flv-player/
@@ -114,18 +111,16 @@ AEsoft File Manager comes with addons that make use of these libraries:
 - CodeMirror for syntax highlighting
   > http://marijn.haverbeke.nl/codemirror/
 
------------------------------------------------------------------------
-| FAQ
+FAQ
 =======================================================================
 
 Q: I forgot my admin password, what do I do?
 A: Open persist.inc.php, and change the admin password to FALSE (No
-   quotation marks). Then go to fileman/install.php and reinstall
-   File Manager.
+   quotation marks), and delete the line that starts with `'inst_id' =>`.
+   Then go to fileman/install.php and reinstall Filecharger.
 
 
------------------------------------------------------------------------
-| The Fine Print...
+The Fine Print...
 =======================================================================
 
 I am not responsible for any damage done to your computer and/or web
@@ -137,8 +132,7 @@ In short, do not blame, sue, threaten, hold for ransom, kill, or injure
 me if this PHP script does not work correctly.
 
 
------------------------------------------------------------------------
-| License
+License
 =======================================================================
 
 Filecharger is free software: you can redistribute it and/or modify
@@ -154,15 +148,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Filecharger.  If not, see <http://www.gnu.org/licenses/>.
 
------------------------------------------------------------------------
-| Known Bugs
+Known Bugs
 =======================================================================
 
 All know bugs have been fixed.
 
 
------------------------------------------------------------------------
-| History
+History
 =======================================================================
 
 Filecharger 1.0
