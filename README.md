@@ -3,7 +3,9 @@ Filecharger 1.0
 
 http://filecharger.com  
 For any webserver running PHP 4 and above  
-By Guangcong Luo - http://guangcongluo.com
+By [Guangcong Luo][1]
+
+  [1]: http://guangcongluo.com
 
 
 Installation / Using the script
@@ -12,27 +14,30 @@ Installation / Using the script
 Installation
 ----------------------------------
 
-1. If you can unzip files online (i.e. with CPanel):
+1. If you can unzip files online (e.g. with CPanel):
 
-     Send fileman.zip to the directory of your webserver you want it to
+     Send `fileman.zip` to the directory of your webserver you want it to
      be, then extract it.
 
    Otherwise:
 
-     Send the contents of fileman.zip to the directory of your webserver
+     Send the contents of `fileman.zip` to the directory of your webserver
      you want it to be.
-     Note: Sending readme.txt or devdoc.txt is optional.
 
-2. Navigate to the directory you installed it in (example.com/fileman/)
+2. Navigate to the directory you installed it in (`example.com/fileman/`)
 
 3. Follow the on-screen instructions.
+
+Note: If this process doesn't work, you can also set it up manually
+by editing `config-example.inc.php` and then renaming it to
+`config.inc.php`.
 
 
 Usage
 ----------------------------------
 
- Go to the directory of your webserver you installed it. For instance,
- if you uploaded it to http://example.com/fileman/ , go there.
+Go to the directory of your webserver you installed it. For instance,
+if you uploaded it to http://example.com/fileman/ , go there.
 
 
 Overview
@@ -74,22 +79,8 @@ Windows, Linux, and other OSes:
 `Ctrl+Del`                      Delete without asking
 
 
-None of The Above
+Credits
 =======================================================================
-
-Questions? Comments? Suggestions?
-E-mail guangcongluo@gmail.com
-
-My portfolio is...
-
- http://guangcongluo.com
-
-My E-mail address is...
-
- guangcongluo@gmail.com
-
-Special Thanks to:
-----------------------------------
 
 - Nathan Lapierre, for giving web hosting throughout these years.
   > novawave.ca
@@ -111,6 +102,7 @@ Filecharger comes with addons that make use of these libraries:
 - CodeMirror for syntax highlighting
   > http://marijn.haverbeke.nl/codemirror/
 
+
 FAQ
 =======================================================================
 
@@ -118,18 +110,6 @@ Q: I forgot my admin password, what do I do?
 A: Open persist.inc.php, and change the admin password to FALSE (No
    quotation marks), and delete the line that starts with `'inst_id' =>`.
    Then go to fileman/install.php and reinstall Filecharger.
-
-
-The Fine Print...
-=======================================================================
-
-I am not responsible for any damage done to your computer and/or web
-server, although I can truthfully say that, to the best of my knowledge,
-it is nearly impossible for this PHP script to damage your computer
-and/or web server.
-
-In short, do not blame, sue, threaten, hold for ransom, kill, or injure
-me if this PHP script does not work correctly.
 
 
 License
@@ -147,11 +127,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with Filecharger.  If not, see <http://www.gnu.org/licenses/>.
-
-Known Bugs
-=======================================================================
-
-All know bugs have been fixed.
 
 
 History
