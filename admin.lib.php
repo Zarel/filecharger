@@ -91,9 +91,9 @@ $manual_install = '.persist_tophp($manual_install).';
 /*** MANUAL INSTALLATION INSTRUCTIONS: ********************************
  *
  * 1. Edit this config file to suit your needs
- * 2. CHMOD cache/ to 777
- * 3. CHMOD persist.inc.php and config.inc.php to 777
- * 4. Log in using the username \'Admin\' and no password
+ * 2. If not writable by PHP, CHMOD cache/ to 777
+ * 3. If not writable by PHP, CHMOD persist.inc.php, config.inc.php to 666
+ * 4. Log in using the username 'Admin' and no password
  * 5. Go to Account Settings and set a password
  * 
  *** ABOUT DIRECT MODE: ***********************************************
@@ -105,9 +105,9 @@ $manual_install = '.persist_tophp($manual_install).';
  * To install using direct mode, you\'ll need to install manually
  * (remember to set $manual_install above to TRUE, and $write_method
  * to \'direct\'). In direct mode, you\'ll need to either CHMOD any
- * folders you want File Manager to manage to 777, or you\'ll need to
+ * folders you want Filecharger to manage to 777, or you\'ll need to
  * run PHP as a user with write permissions to all folders you want
- * File Manager to access.
+ * Filecharger to access.
  * 
  **********************************************************************/
 
@@ -151,9 +151,9 @@ $loginfirst = '.persist_tophp($loginfirst).';
 $isauth = '.persist_tophp($isauth).';
 
 /* Whether or not you allow PHP.
- * Notice: PHP cannot be controlled yet, so this is VERY VERY insecure
- * if $presub isn\'t blank. Leave FALSE unless you\'re absolutely
- * sure you know what you\'re doing.
+ * Notice: PHP allows you to do anything the account running PHP can do,
+ * so this gives users full control over your website.
+ * Leave FALSE unless you\'re absolutely sure you know what you\'re doing.
  */
 $allow_php = '.persist_tophp($allow_php).';
 
@@ -194,7 +194,7 @@ $ftp_username = '.persist_tophp($ftp_username).';
 $ftp_password = '.persist_tophp($ftp_password).';
 $ftp_prepath = '.persist_tophp($ftp_prepath).';
 $ftp_ftps = '.persist_tophp($ftp_ftps).';
-?>';
+';
 	$file = @fopen('config.inc.php','w');
 	if ($file === false) return false;
 	$works = @fwrite($file,$configdata);

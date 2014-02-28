@@ -140,6 +140,8 @@ if (!$sid)
 unset($i);
 $presub = ($user['priv']==127?'':$user['psub']);
 
+if ($presub) $allow_php = $false;
+
 if ($_POST['login'] && dname2name($_POST['uname'])==='guest' && !$_PERSIST['users'][0]['priv'])
   $status = $_PERSIST['users'][0]['priv']?'gli':'gad';
 

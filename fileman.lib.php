@@ -144,7 +144,6 @@ $postsub = substr($d,strlen($presub));
 $file = '';
 $fullurl = $preurl.$presub.$postsub.$file;
 
-if ($presub && $allow_php==='auto') $allow_php = $false;
 $allow_php = ($allow_php?TRUE:FALSE);
 
   //====================
