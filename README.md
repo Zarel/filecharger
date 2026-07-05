@@ -1,7 +1,21 @@
 Filecharger 1.0
 =======================================================================
 
-http://filecharger.com  
+UNMAINTAINED
+----------------------------------
+
+While this was once pretty cool software, the world has moved on. You
+can see its original landing page on the Wayback Machine:
+
+https://web.archive.org/web/20151022173307/http://filecharger.com/
+
+I would not recommend trying to use it in this day and age.
+
+
+Previous introduction
+----------------------------------
+
+`http://filecharger.com`
 For any webserver running PHP 4 and above  
 By [Guangcong Luo][1]
 
